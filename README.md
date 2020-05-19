@@ -1,2 +1,137 @@
-# ASUS-K555UB-Hackintosh
-Hackintosh config for K555UB series Notebooks. Run macOS on your ASUS.
+# Asus K555UB XO092T | Intel® Core™ i5 serisi
+
+[![release](https://img.shields.io/badge/indir-son%20sürüm-blue.svg)](#) [![wiki](https://img.shields.io/badge/destek-iCloud-9cf.svg)](#i̇letişime-geçin)
+
+Türkçe | [English](README_EN.md)
+
+**Bu yapıda paylaşacağım dosyalar ile aşağıya yazdığım sistem bilgileri cihazınızla eşleşiyorsa, K555UB cihazınızda macOS çalıştırmanız mümkün - macOS 10.13.6 - macOS 10.15.4 arası test edilmiştir**
+
+**Desteklenen modeller: XO066T/XO093T/XO096T/XO097T/XO198T/XO266T/XO099D/XO227D**
+
+![Alt text](Images/Hackintosh.png)
+
+# Detaylar
+
+    Tarih:        Mayıs 15, 2020
+    Durum:        Stabil
+    Destek:       BIOS (Sürüm 304)
+    Yapı:         Clover (+ACPI hotpatch [RehabMan]) kullanılarak, Asus K555UB cihaza uyarlanmıştır
+
+## Donanım
+
+| ║▌║ **ASUS** ║▌║ | Detay                                                  |
+| ------------------- | ------------------------------------------- |
+| Model Ismi      | Asus K555UB XO092T      |
+| Anakart           | X555UB     |
+| CPU              | Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz (max. 2.80GHz) Skylake-U              |
+| RAM           | X555UB 4GB 1600 MHz DDR3 + Samsung 8GB 1600MHz DDR3    |
+| Dahili Grafik Kartı | Intel(R) HD Graphics 520 (1 GB)                     |
+| Wi-Fi             | Realtek RTL8723BE Wireless LAN 802.11n PCI-E |
+| Kamera          | ASUS USB2.0 VGA UVC WebCam           |
+| Ses       | Realtek ALC256 (Apple ALC Layout: 28)                        |
+| Touchpad       | ELAN 1000                        |
+| BIOS Versiyonu      | X555UB.304 (Sürüm 304)                   |
+
+# Değiştirilen donanım(lar)
+
+    HGST Travelstar 2.5-Inch 1TB 5400RPM | https://amzn.to/2LFlFMe
+    
+    Sebebi: SSD Yükseltmesi (Hız bakımından)
+
+| Ürün    | Bilgi |
+| ------------- | ------- |
+| Samsung SSD 860 EVO 500GB   | https://amzn.to/2z9ef17   |
+| James Donkey JD120 120GB   | https://bit.ly/2ZisP0W   |
+
+> II. SSD, cihaza DVD-RW sürücüsü söküldükten sonra takılmıştır. Gerekli parça: DVD to HDD aparatı (https://amzn.to/2Tdf1B5 benzeri) satın alarak içerisine HDD veya SSD donanımı yerleştirdikten sonra DVD-RW portuna takabilirsiniz.
+
+# Desteklenmeyen donanımlar
+
+    1. Harici Ekran Kartı (NVIDIA GeForce 940M PCI-e) [Apple desteklemiyor]
+    2. 'FN + medya kontrolü' fonksiyon tuşları [Yama yapılacak]
+    4. ELAN1000 Touchpad [Yama yapılacak]
+    4. Realtek RTL8723BE Wireless (Wi-Fi kartı) [Apple desteklemiyor] -Yazının devamında çözümü var-
+
+## Uyumluluk
+Paylaştığım EFI klasörü, **macOS Catalina 10.15.4** sürümünü desteklemektedir.
+macOS Mojave 10.14.6 sürümünü kuracaksanız, USB bellekteki EFI diskinde sırasıyla EFI > Clover > Kexts > 10.15 içerisindeki tüm dosyaları, bir üst dizindeki 10.14 klasörüne taşıyın. macOS High Sierra 10.13.6 için 10.13 klasörüne taşıyın.
+
+## Yedeklerinizi alın
+**Yükleme talimatlarına geçmeden önce;** Sistemde kurulu Windows, Linux veya benzeri bir işletim sistemi var ise her ihtimale karşı **önemli yedeklerinizi almayı unutmayın.** Yanlış diski silme veya diski **APFS formatlama** esnasında disk yapısı bozulabilir. Yedeklerinizi [Yandex.Disk](https://disk.yandex.com.tr) tarzı çevrimiçi bir depolama alanına veya (var ise) harici diskinize depolamanızı öneririm.
+
+## Kurulum öncesi yapılması gerekenler
+* [Etcher](https://www.balena.io/etcher/) programının işletim sisteminize uygun olan versiyonunu indirin
+* KaoS tarafından paket haline getirilen, macOS kurulumu için gerekli olan RAW kurulum dosyasını ([OSXINFO sitesinden](https://osxinfo.net/konu/macos-catalina-amd-intel-kurulum-imaji.10455) indirin | Link konunun alt taraflarındadır
+* Paylaştığım son EFI.zip dosyasını indirin: [ASUS-K555UB-Hackintosh/releases](https://github.com/sutsurup/ASUS-K555UB-Hackintosh/releases)
+
+# macOS Yükleme Talimatları
+
+
+1. BIOS ekranına girin ve aşağıdaki değerleri değiştirin (ESC tuşu BIOS menüsüne girmeye yardımcı olur):
+
+	- Display memory: 64MB
+	- VT-D devre dışı bırak
+	- Fast Boot devre dışı bırak
+	- Secure Boot devre dışı bırak
+	- önerilir: Boot menüsünde USB belleği birinci tercih olarak seçin (En üstteki seçenek)
+
+2. macOS kurulumunu başlatabilmek için USB belleğinize MAC kurulum dosyasını (RAW) Etcher programı yardımıyla yazdırın
+3. İndirdiğiniz EFI.zip dosyasına sağ tıklayıp klasöre çıkarın. USB belleğin EFI diskindeki EFI klasörü içerisindeki BOOT ve CLOVER klasörlerini silin, indirdiğiniz EFI klasöründekileri oraya yükleyin
+4. USB belleği takın, cihazı başlatın ve başlatma düğmesine basar basmaz ESC tuşuna basın. USB belleği seçerek devam edin ve macOS installer'ı seçin
+5. Toucpad çalışmayacaktır - USB Mause kullanabilirsiniz
+6. macOS sistemini Windows yanına kuracaksanız, [bu rehber'de yapıldığı gibi](https://www.youtube.com/watch?v=nvXew__fuQE) Apple HFS diski oluşturmanız gerekiyor. Kurulum aşamasında bu diski seçerek ilerleyeceksiniz.
+5. Cihazda sadece macOS kullanacaksanız, kurulum ekranı geldiğinde "Disk Izlencesi" bölümüne gidin, sol üstteki "Görüntü" yazısının üzerindeki butona basın ve tüm diskleri göster deyin. Bu sayede alt tarafta HDD/SSD donanımınız gözükecek. "Samsung SSD" gibi. Buna tıklayın ve sonrasında sağ tarafta bulunan "Sil" butonuna tıklayın. Biçim olarak "APFS", Düzen olarak "GUID Bölüntü Haritası" seçeceksiniz ve tekrar sil deyin. Işlem tamamlandığı zaman bu pencereyi kapatın ve kuruluma normal şekilde devam edin, yeni oluşturduğunuz APFS diskini seçin. Kurulum bittikten sonra cihaz yeniden başlayacaktır. Son yaptığınız işlemden sonra artık "macOS installer" seçmeyeceksiniz. Yeniden başladığı zaman 4. adımda yaptığınız gibi tekrar USB belleği seçin ve bu sefer yeni oluşturduğunuz APFS diskini seçin.  Bilgisayar her yeniden başladığında, yeni oluşturduğunuz APFS diski seçeceksiniz.  Kurulumun kalan kısmı bittiği zaman sistem kullanıma hazır hale gelecektir.
+
+Sistemi yeni kurduğunuzdan dolayı ilk birkaç açılışta kendi içinde ayarlarını yapmaktadır. Bu sebeple yavaş açılabilir.
+Sabırlı olun.
+```
+$ Destek almak için paylaştığım mail adresinden bana ulaşabilirsiniz.
+``` 
+
+# Kurulum sonrası yararlanabileğiniz rehber/araçlar
+* iCloud'a giriş yapacaksanız veya iMessage, FaceTime kullanmak istiyorsanız, bu rehberi harfiyen uygulayın: [Hackintosh Cihazlarda iMessage Etkinleştirmek](https://osxinfo.net/konu/hackintosh-cihazlarda-imessage-etkinlestirmek.84)
+* [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
+* Hackintool ([Forum thread](https://www.insanelymac.com/forum/topic/335018-hackintool-v286/) | [Direkt indirme linki](http://headsoft.com.au/download/mac/Hackintool.zip))
+* Kext Updater ([Indir](https://bitbucket.org/profdrluigi/kextupdater/downloads/) | [Forum](https://www.hackintosh-forum.de/forum/thread/32621-kext-updater-neue-version-3-x/) {Alman})
+
+# Wi-Fi nasıl kullanırım?
+K555UB sistemiyle yerleşik gelen Realtek RTL8723BE Wireless kartı Apple tarafından **deskteklenmediğinden dolayı,** bu kartı değiştirmeniz gerekiyor. Peki bu konuda ne yapabiliriz?
+
+1. Anakart Half Mini PCI-e kartları desteklemektedir. Bu sebeple **kesinlikle** Mini PCI-e değil, Half Mini PCI-e kartlara yönelmelisiniz.
+2. Bluetooth ve beraberinde AirDrop gibi macOS fonksiyonların çalışmasını istiyorsanız, +Bluetooth destekleyen kartları tercih edin.
+3. Kablosuz USB Adaptör satın alabilirsiniz. Ben şu anda [ASUS Kablosuz N150 USB Nano Adaptör](https://www.asus.com/tr/Networking/USBN10_NANO) kullanmaktayım.
+
+ AliExpres üzerinden Broadcom DW1510 ve Atheros AR5BHB92 kartları sipariş ettim. **Geldiği zaman bir test yaparız :)**
+ Ayrıca: AzureWave AW-CB160H başta olmak üzere, AW-CE123H bu iki kartı öneririm.
+
+## Kablosuz USB Adaptörleri sisteme nasıl tanıtabilirsiniz?
+
+Paylaşacağım kurulum dosyasının çalıştırdığı Kablosuz USB Adaptörler burada listelenmiştir:
+[chris1111/Wireless-USB-Adapter-Clover](https://github.com/chris1111/Wireless-USB-Adapter-Clover)
+
+1. Yayınlanan son sürümü buradan: [Wireless-USB-Adapter-Clover/Releases](https://github.com/chris1111/Wireless-USB-Adapter-Clover/releases), veya direk bu linke tıklayarak indirebilirsiniz. [Wireless-USB-Adapter-Clover/V14.zip](https://github.com/chris1111/Wireless-USB-Adapter-Clover/files/4301774/Wireless.USB.Adapter.Clover-V14.zip)  
+2. Kurulum dosyasını indirikten sonra kurulumu tamamlayın  
+3. Cihazı yeniden başlatın 
+```
+$ ASUS Kablosuz N150 USB Nano Adaptör için orijinal ASUS yazılım dosyası aşağıdadır:  
+```  
+1. [USB-N10 NANO // Sürücüler & Araçlar](https://www.asus.com/tr/Networking/USBN10_NANO/HelpDesk_Download/) 
+2. Alternatif olarak, repo içerisinde "Wi-Fi Fix" klasöründe paylaştığım PKG dosyasını da yükleyebilirsiniz.
+
+> Son bahsettiğim PKG dosyasını paylaşmamın asıl sebebi; Diğer bahsettiğim chris1111 ve ASUS orijinal kurulum dosyalarına nazaran sinyal göstergesinin çalışmasıdır. Diğerlerinde durum çubuğunda sembolik bir (sabit) Wi-Fi ikonu bulunur, sinyal çekim gücünü ancak listeye girince görebilirsiniz fakat "Wi-Fi Fix" klasöründeki kurulum dosyasıyla birlikte gelen durum çubuğundaki Wireless çekim gücü ikonu hareketlidir, çekim gücünü net gösterir.
+
+## İletişime geçin
+Website: https://veysel.me //
+Mail: [veyselfurkan@icloud.com](mailto:veyselfurkan@icloud.com)
+
+## Diğer bağlantılar
+- [ASUS Resmi Websitesi // K555UB](https://www.asus.com/tr/Laptops/K555UB)
+- [High Sierra 10.13](https://osxinfo.net/konu/basarili-kurulum-asus-k555ub-xo092t-mojave-10-14.6632)
+- [Mojave 10.14](https://osxinfo.net/konu/basarili-kurulum-asus-k555ub-xo092t-mojave-10-14.6632)
+- [Catalina 10.15.3](https://osxinfo.net/konu/asus-k555ub-xo092t-catalina-10-15-3.13141)
+- [Clover Bootloader](https://github.com/CloverHackyColor/CloverBootloader/releases)
+
+### Teşekkürler:
+**LeeBinder** (README.md örnekleri), **RehabMan** (ACPI hotpatch), ve **Hackintosh** sistemlere destek veren birçok kişiye...
+
+Kolay gelsin!
