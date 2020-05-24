@@ -1,10 +1,10 @@
 # Asus K555UB XO092T | Intel® Core™ i5 serisi
 
-[![release](https://img.shields.io/badge/indir-son%20sürüm-blue.svg)](#) [![wiki](https://img.shields.io/badge/destek-iCloud-9cf.svg)](#i̇letişime-geçin)
+[![release](https://img.shields.io/badge/indir-son%20sürüm-blue.svg)](https://github.com/sutsurup/ASUS-K555UB-Hackintosh/releases/download/1.0/EFI.zip) [![wiki](https://img.shields.io/badge/destek-iCloud-9cf.svg)](#i̇letişime-geçin)
 
 Türkçe | [English](README_EN.md)
 
-**Bu yapıda paylaşacağım dosyalar ile aşağıya yazdığım sistem bilgileri cihazınızla eşleşiyorsa, K555UB cihazınızda macOS çalıştırmanız mümkün - macOS 10.13.6 - macOS 10.15.4 arası test edilmiştir**
+**Bu yapıda paylaşacağım dosyaları kullanarak K555UB cihazınızda macOS çalıştırmanız mümkün - macOS 10.13.6 - macOS 10.15.4 arası test edilmiştir**
 
 **Desteklenen modeller: XO066T/XO093T/XO096T/XO097T/XO198T/XO266T/XO099D/XO227D**
 
@@ -62,7 +62,7 @@ macOS Mojave 10.14.6 sürümünü kuracaksanız, USB bellekteki EFI diskinde sı
 ## Kurulum öncesi yapılması gerekenler
 * [Etcher](https://www.balena.io/etcher/) programının işletim sisteminize uygun olan versiyonunu indirin
 * KaoS tarafından paket haline getirilen, macOS kurulumu için gerekli olan RAW kurulum dosyasını ([OSXINFO sitesinden](https://osxinfo.net/konu/macos-catalina-amd-intel-kurulum-imaji.10455) indirin | Link konunun alt taraflarındadır
-* Paylaştığım son EFI.zip dosyasını indirin: [ASUS-K555UB-Hackintosh/releases](https://github.com/sutsurup/ASUS-K555UB-Hackintosh/releases)
+* Paylaştığım son EFI.zip dosyasını indirin: [ASUS-K555UB-Hackintosh/releases/1.0](https://github.com/sutsurup/ASUS-K555UB-Hackintosh/releases/download/1.0/EFI.zip)
 
 # macOS Yükleme Talimatları
 
@@ -89,7 +89,7 @@ $ Destek almak için paylaştığım mail adresinden bana ulaşabilirsiniz.
 ``` 
 
 # Kurulum sonrası yararlanabileğiniz rehber/araçlar
-* iCloud'a giriş yapacaksanız veya iMessage, FaceTime kullanmak istiyorsanız, bu rehberi harfiyen uygulayın: [Hackintosh Cihazlarda iMessage Etkinleştirmek](https://osxinfo.net/konu/hackintosh-cihazlarda-imessage-etkinlestirmek.84)
+* önerilir: iCloud'a giriş yapacaksanız veya iMessage, FaceTime kullanmak istiyorsanız, bu rehberi harfiyen uygulayın: [Hackintosh Cihazlarda iMessage Etkinleştirmek](https://osxinfo.net/konu/hackintosh-cihazlarda-imessage-etkinlestirmek.84)
 * [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
 * Hackintool ([Forum thread](https://www.insanelymac.com/forum/topic/335018-hackintool-v286/) | [Direkt indirme linki](http://headsoft.com.au/download/mac/Hackintool.zip))
 * Kext Updater ([Indir](https://bitbucket.org/profdrluigi/kextupdater/downloads/) | [Forum](https://www.hackintosh-forum.de/forum/thread/32621-kext-updater-neue-version-3-x/) {Alman})
