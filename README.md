@@ -35,15 +35,21 @@ Türkçe | [English](README_EN.md)
 # Değiştirilen donanım(lar)
 
     HGST Travelstar 2.5-Inch 1TB 5400RPM | https://amzn.to/2LFlFMe
+    Realtek RTL8723BE Wireless LAN 802.11n PCI-E
+    
     
     Sebebi: SSD Yükseltmesi (Hız bakımından)
+    Sebebi: Apple, RTL8723BE wireless kartını desteklemiyor
 
 | Ürün    | Bilgi |
 | ------------- | ------- |
 | Samsung SSD 860 EVO 500GB   | https://amzn.to/2z9ef17   |
 | James Donkey JD120 120GB   | https://bit.ly/2ZisP0W   |
+| Dell DW1510 Wireless Kart Chip: BCM4322   | https://bit.ly/2yXeyMi   |
 
 > II. SSD, cihaza DVD-RW sürücüsü söküldükten sonra takılmıştır. Gerekli parça: DVD to HDD aparatı (https://amzn.to/2Tdf1B5 benzeri) satın alarak içerisine HDD veya SSD donanımı yerleştirdikten sonra DVD-RW portuna takabilirsiniz.
+
+> Dell DW1510, High Sierra ve Mojave gibi macOS sürümlerinde yerleşik olarak destekleniyor. Bu kartı satın alırsanız, Tak-Çalıştır yöntemiyle kullanabilirsiniz. Fakat bu kartın desteği, Catalina ile birlikte son buldu. Kartı Catalina'da çalıştırabilmek için, High Sierra veya Mojave sisteminde /System/Library/Extensions klasöründeki IO80211Family.kext ve IO80211FamilyV2.kext dosyalarını, Catalina'da yine aynı dizine kurmak gerekiyor. Bu dosyaları Mojave sisteminden çıkardım ve Releases bölümünde V1.1 altına paylaşıyorum. Kurulum sonrası bölümünde bu dosyaları nasıl yükleyeceğinizi anlattım.
 
 # Desteklenmeyen donanımlar
 
@@ -93,6 +99,21 @@ $ Destek almak için paylaştığım mail adresinden bana ulaşabilirsiniz.
 * [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
 * Hackintool ([Forum thread](https://www.insanelymac.com/forum/topic/335018-hackintool-v286/) | [Direkt indirme linki](http://headsoft.com.au/download/mac/Hackintool.zip))
 * Kext Updater ([Indir](https://bitbucket.org/profdrluigi/kextupdater/downloads/) | [Forum](https://www.hackintosh-forum.de/forum/thread/32621-kext-updater-neue-version-3-x/) {Alman})
+
+### Dell DW1510 wireless kartı Catalina'da nasıl çalıştırılır?
+Daha öncesinde Dell DW1510 wireless kartının Catalina'da desteklenmediğini söylemiştim. Releases bölümünde V1.1 ile paylaştığım [Mojave-IO80211Family.zip](https://github.com/sutsurup/ASUS-K555UB-Hackintosh/releases/tag/1.1) dosyasını indirin.
+
+1. [cVad's MAC] (http://cvad-mac.narod.ru/index/0-4) sitesinden Kext Utility uygulamasını indirin (Mavi ok işaretine basın)
+2. Kext'leri sisteme yükleyebilmek için SIP devre dışı bırakmamız gerekiyor, Terminal'i açın, belirteceğim kodları sırayla yazın:
+	- sudo -s (Sonrasında Password soracak, MAC'in şifresini girin)
+	- spctl --master-disable
+	- mount -uw /
+	- killall Finder
+3. Indirdiğiniz Kext Utility uygulamasını, Uygulamalar klasörüne taşıyın ve çalıştırın
+4. Çalıştırdıktan sonra "Enjoy" yazısını görene kadar bekleyin
+5. Mojave-IO80211Family.zip içerisindeki IO80211Family.kext ve IO80211FamilyV2.kext dosyalarını uygulamanın üzerine sürükleyin ve izin verin
+6. Tekrar "Enjoy" yazısı gelene kadar bekleyin, kurulum tamamlanmıştır
+7. Cihazı yeninden başlatın ve Wi-Fi'ın keyfini çıkarın :)
 
 # Wi-Fi nasıl kullanırım?
 K555UB sistemiyle yerleşik gelen Realtek RTL8723BE Wireless kartı Apple tarafından **deskteklenmediğinden dolayı,** bu kartı değiştirmeniz gerekiyor. Peki bu konuda ne yapabiliriz?
