@@ -54,8 +54,8 @@ Türkçe | [English](README_EN.md)
 # Desteklenmeyen donanımlar
 
     1. Harici Ekran Kartı (NVIDIA GeForce 940M PCI-e) [Apple desteklemiyor]
-    2. 'FN + medya kontrolü' fonksiyon tuşları [Yama yapılacak]
-    4. ELAN1000 Touchpad [Yama yapılacak]
+    2. 'FN + medya kontrolü' fonksiyon tuşları [Yama yapıldı - çalışıyor]
+    4. ELAN1000 Touchpad [Yama yapıldı - çalışıyor]
     4. Realtek RTL8723BE Wireless (Wi-Fi kartı) [Apple desteklemiyor] -Yazının devamında çözümü var-
 
 ## Uyumluluk
@@ -68,7 +68,7 @@ macOS Mojave 10.14.6 sürümünü kuracaksanız, USB bellekteki EFI diskinde sı
 ## Kurulum öncesi yapılması gerekenler
 * [Etcher](https://www.balena.io/etcher/) programının işletim sisteminize uygun olan versiyonunu indirin
 * KaoS tarafından paket haline getirilen, macOS kurulumu için gerekli olan RAW kurulum dosyasını ([OSXINFO sitesinden](https://osxinfo.net/konu/macos-catalina-amd-intel-kurulum-imaji.10455) indirin | Link konunun alt taraflarındadır
-* Paylaştığım son EFI.zip dosyasını indirin: [ASUS-K555UB-Hackintosh/releases/1.0](https://github.com/sutsurup/ASUS-K555UB-Hackintosh/releases/download/1.0/EFI.zip)
+* Paylaştığım son EFI.zip dosyasını indirin: [ASUS-K555UB-Hackintosh/releases/1.2](https://github.com/sutsurup/ASUS-K555UB-Hackintosh/releases)
 
 # macOS Yükleme Talimatları
 
@@ -84,7 +84,7 @@ macOS Mojave 10.14.6 sürümünü kuracaksanız, USB bellekteki EFI diskinde sı
 2. macOS kurulumunu başlatabilmek için USB belleğinize MAC kurulum dosyasını (RAW) Etcher programı yardımıyla yazdırın
 3. İndirdiğiniz EFI.zip dosyasına sağ tıklayıp klasöre çıkarın. USB belleğin EFI diskindeki EFI klasörü içerisindeki BOOT ve CLOVER klasörlerini silin, indirdiğiniz EFI klasöründekileri oraya yükleyin
 4. USB belleği takın, cihazı başlatın ve başlatma düğmesine basar basmaz ESC tuşuna basın. USB belleği seçerek devam edin ve macOS installer'ı seçin
-5. Toucpad çalışmayacaktır - USB Mause kullanabilirsiniz
+5. Toucpad çalışacaktır - veya USB Mouse kullanabilirsiniz
 6. macOS sistemini Windows yanına kuracaksanız, [bu rehber'de yapıldığı gibi](https://www.youtube.com/watch?v=nvXew__fuQE) Apple HFS diski oluşturmanız gerekiyor. Kurulum aşamasında bu diski seçerek ilerleyeceksiniz.
 5. Cihazda sadece macOS kullanacaksanız, kurulum ekranı geldiğinde "Disk Izlencesi" bölümüne gidin, sol üstteki "Görüntü" yazısının üzerindeki butona basın ve tüm diskleri göster deyin. Bu sayede alt tarafta HDD/SSD donanımınız gözükecek. "Samsung SSD" gibi. Buna tıklayın ve sonrasında sağ tarafta bulunan "Sil" butonuna tıklayın. Biçim olarak "APFS", Düzen olarak "GUID Bölüntü Haritası" seçeceksiniz ve tekrar sil deyin. Işlem tamamlandığı zaman bu pencereyi kapatın ve kuruluma normal şekilde devam edin, yeni oluşturduğunuz APFS diskini seçin. Kurulum bittikten sonra cihaz yeniden başlayacaktır. Son yaptığınız işlemden sonra artık "macOS installer" seçmeyeceksiniz. Yeniden başladığı zaman 4. adımda yaptığınız gibi tekrar USB belleği seçin ve bu sefer yeni oluşturduğunuz APFS diskini seçin.  Bilgisayar her yeniden başladığında, yeni oluşturduğunuz APFS diski seçeceksiniz.  Kurulumun kalan kısmı bittiği zaman sistem kullanıma hazır hale gelecektir.
 
