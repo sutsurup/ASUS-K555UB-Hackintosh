@@ -124,6 +124,7 @@ K555UB sistemiyle yerleşik gelen Realtek RTL8723BE Wireless kartı Apple taraf�
 
  AliExpres üzerinden Broadcom DW1510 ve Atheros AR5BHB92 kartları sipariş ettim. **Geldiği zaman bir test yaparız :)**
  Ayrıca: AzureWave AW-CB160H başta olmak üzere, AW-CE123H bu iki kartı öneririm.
+ Düzenleme 05/10/2020: DW1510 wireless kartı geldi, 18 Lira vergisi ile birlikte :) Donanıma dahil edilmiştir
 
 ## Kablosuz USB Adaptörleri sisteme nasıl tanıtabilirsiniz?
 
