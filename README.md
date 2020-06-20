@@ -1,10 +1,10 @@
-# Asus K555UB XO092T | Intel® Core™ i5 serisi
+# ASUS K555UB XO092T | Intel® Core™ i5 Serisi
 
 [![release](https://img.shields.io/badge/indir-son%20sürüm-blue.svg)](https://github.com/sutsurup/ASUS-K555UB-Hackintosh/releases/download/1.0/EFI.zip) [![wiki](https://img.shields.io/badge/destek-iCloud-9cf.svg)](#i̇letişime-geçin)
 
 Türkçe | [English](README_EN.md)
 
-**Bu yapıda paylaşacağım dosyaları kullanarak K555UB cihazınızda macOS çalıştırmanız mümkün - macOS 10.13.6 - macOS 10.15.4 arası test edilmiştir**
+**Bu yapıda paylaşacağım dosyaları kullanarak K555UB cihazınızda macOS çalıştırmanız mümkün - macOS 10.13 ve macOS 10.15 sürümleri arasında test edilmiştir**
 
 **Desteklenen modeller: XO066T/XO093T/XO096T/XO097T/XO198T/XO266T/XO099D/XO227D**
 
@@ -12,7 +12,7 @@ Türkçe | [English](README_EN.md)
 
 # Detaylar
 
-    Tarih:        Mayıs 15, 2020
+    Tarih:        5 Haziran, 2020
     Durum:        Stabil
     Destek:       BIOS (Sürüm 304)
     Yapı:         Clover (+ACPI hotpatch [RehabMan]) kullanılarak, Asus K555UB cihaza uyarlanmıştır
@@ -21,7 +21,7 @@ Türkçe | [English](README_EN.md)
 
 | ║▌║ **ASUS** ║▌║ | Detay                                                  |
 | ------------------- | ------------------------------------------- |
-| Model Ismi      | Asus K555UB XO092T      |
+| Model Ismi      | K555UB XO092T      |
 | Anakart           | X555UB     |
 | CPU              | Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz (max. 2.80GHz) Skylake-U              |
 | RAM           | X555UB 4GB 1600 MHz DDR3 + Samsung 8GB 1600MHz DDR3    |
@@ -49,7 +49,7 @@ Türkçe | [English](README_EN.md)
 
 > II. SSD, cihaza DVD-RW sürücüsü söküldükten sonra takılmıştır. Gerekli parça: DVD to HDD aparatı (https://amzn.to/2Tdf1B5 benzeri) satın alarak içerisine HDD veya SSD donanımı yerleştirdikten sonra DVD-RW portuna takabilirsiniz.
 
-> Dell DW1510, High Sierra ve Mojave gibi macOS sürümlerinde yerleşik olarak destekleniyor. Bu kartı satın alırsanız, Tak-Çalıştır yöntemiyle kullanabilirsiniz. Fakat bu kartın desteği, Catalina ile birlikte son buldu. Kartı Catalina'da çalıştırabilmek için, High Sierra veya Mojave sisteminde /System/Library/Extensions klasöründeki IO80211Family.kext ve IO80211FamilyV2.kext dosyalarını, Catalina'da yine aynı dizine kurmak gerekiyor. Bu dosyaları Mojave sisteminden çıkardım ve Releases bölümünde V1.1 altına paylaşıyorum. Kurulum sonrası bölümünde bu dosyaları nasıl yükleyeceğinizi anlattım.
+> Dell DW1510, High Sierra ve Mojave gibi macOS sürümlerinde yerleşik olarak destekleniyor. Bu kartı satın alırsanız, Tak-Çalıştır yöntemiyle kullanabilirsiniz. Fakat bu kartın desteği, Catalina yayınlandığında son buldu. Kartı Catalina'da çalıştırabilmek için, High Sierra veya Mojave sisteminde /System/Library/Extensions klasöründeki IO80211Family.kext ve IO80211FamilyV2.kext dosyalarını çıkarmak ve Catalina'da yine aynı dizine kurmak gerekiyor. Bu dosyaları Mojave sisteminden çıkardım ve Releases bölümünde V1.1 altına paylaşıyorum. Kurulum sonrası bölümünde bu dosyaları nasıl yükleyeceğinizi anlattım.
 
 # Desteklenmeyen donanımlar
 
@@ -59,7 +59,7 @@ Türkçe | [English](README_EN.md)
     4. Realtek RTL8723BE Wireless (Wi-Fi kartı) [Apple desteklemiyor] -Yazının devamında çözümü var-
 
 ## Uyumluluk
-Paylaştığım EFI klasörü, **macOS Catalina 10.15.4** sürümünü desteklemektedir.
+Paylaştığım EFI klasörü, **macOS Catalina 10.15.5** sürümünü desteklemektedir.
 macOS Mojave 10.14.6 sürümünü kuracaksanız, USB bellekteki EFI diskinde sırasıyla EFI > Clover > Kexts > 10.15 içerisindeki tüm dosyaları, bir üst dizindeki 10.14 klasörüne taşıyın. macOS High Sierra 10.13.6 için 10.13 klasörüne taşıyın.
 
 ## Yedeklerinizi alın
@@ -67,7 +67,7 @@ macOS Mojave 10.14.6 sürümünü kuracaksanız, USB bellekteki EFI diskinde sı
 
 ## Kurulum öncesi yapılması gerekenler
 * [Etcher](https://www.balena.io/etcher/) programının işletim sisteminize uygun olan versiyonunu indirin
-* KaoS tarafından paket haline getirilen, macOS kurulumu için gerekli olan RAW kurulum dosyasını ([OSXINFO sitesinden](https://osxinfo.net/konu/macos-catalina-amd-intel-kurulum-imaji.10455) indirin | Link konunun alt taraflarındadır
+* KaoS tarafından paket haline getirilen, macOS kurulumu için gerekli olan RAW kurulum dosyasını ([OSXINFO sitesinden](https://osxinfo.net/konu/macos-catalina-amd-intel-kurulum-imaji.10455) indirin | Link konunun alt tarafındadır
 * Paylaştığım son EFI.zip dosyasını indirin: [ASUS-K555UB-Hackintosh/releases/1.2](https://github.com/sutsurup/ASUS-K555UB-Hackintosh/releases)
 
 # macOS Yükleme Talimatları
@@ -76,8 +76,7 @@ macOS Mojave 10.14.6 sürümünü kuracaksanız, USB bellekteki EFI diskinde sı
 1. BIOS ekranına girin ve aşağıdaki değerleri değiştirin (ESC tuşu BIOS menüsüne girmeye yardımcı olur):
 
 	- Display memory: 64MB
-	- VT-D devre dışı bırak
-	- Fast Boot devre dışı bırak
+	- Intel® Virtualization Technology devre dışı bırak
 	- Secure Boot devre dışı bırak
 	- önerilir: Boot menüsünde USB belleği birinci tercih olarak seçin (En üstteki seçenek)
 
@@ -91,7 +90,7 @@ macOS Mojave 10.14.6 sürümünü kuracaksanız, USB bellekteki EFI diskinde sı
 Sistemi yeni kurduğunuzdan dolayı ilk birkaç açılışta kendi içinde ayarlarını yapmaktadır. Bu sebeple yavaş açılabilir.
 Sabırlı olun.
 ```
-$ Destek almak için paylaştığım mail adresinden bana ulaşabilirsiniz.
+$ Destek almak için paylaştığım mail adresinden veya issue açarak bana ulaşabilirsiniz.
 ``` 
 
 # Kurulum sonrası yararlanabileğiniz rehber/araçlar
