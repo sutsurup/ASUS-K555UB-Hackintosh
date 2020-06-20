@@ -1,6 +1,6 @@
 # ASUS K555UB XO092T | Intel® Core™ i5 Serisi
 
-[![release](https://img.shields.io/badge/indir-son%20sürüm-blue.svg)](https://github.com/sutsurup/ASUS-K555UB-Hackintosh/releases/download/1.0/EFI.zip) [![wiki](https://img.shields.io/badge/destek-iCloud-9cf.svg)](#i̇letişime-geçin)
+[![release](https://img.shields.io/badge/indir-son%20sürüm-blue.svg)](https://github.com/sutsurup/ASUS-K555UB-Hackintosh/releases) [![wiki](https://img.shields.io/badge/destek-iCloud-9cf.svg)](#i̇letişime-geçin)
 
 Türkçe | [English](README_EN.md)
 
