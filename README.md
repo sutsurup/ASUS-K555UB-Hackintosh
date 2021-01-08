@@ -15,7 +15,7 @@ Türkçe | [English](README_EN.md)
     Tarih:        5 Haziran, 2020
     Durum:        Stabil
     Destek:       BIOS (Sürüm 304)
-    Yapı:         Clover (+ACPI hotpatch [RehabMan]) kullanılarak, Asus K555UB cihaza uyarlanmıştır
+    Yapı:         Clover kullanılarak, ASUS K555UB cihaza uyarlanmıştır
 
 ## Donanım
 
@@ -59,7 +59,7 @@ Türkçe | [English](README_EN.md)
     4. Realtek RTL8723BE Wireless (Wi-Fi kartı) [Apple desteklemiyor] -Yazının devamında çözümü var-
 
 ## Uyumluluk
-Paylaştığım EFI klasörü, **macOS Catalina 10.15.5** sürümünü desteklemektedir.
+Paylaştığım EFI klasörü, **macOS Catalina 10.15.7** sürümünü desteklemektedir.
 macOS Mojave 10.14.6 sürümünü kuracaksanız, USB bellekteki EFI diskinde sırasıyla EFI > Clover > Kexts > 10.15 içerisindeki tüm dosyaları, bir üst dizindeki 10.14 klasörüne taşıyın. macOS High Sierra 10.13.6 için 10.13 klasörüne taşıyın.
 
 ## Yedeklerinizi alın
@@ -142,8 +142,8 @@ $ ASUS Kablosuz N150 USB Nano Adaptör için orijinal ASUS yazılım dosyası a�
 > Son bahsettiğim PKG dosyasını paylaşmamın asıl sebebi; Diğer bahsettiğim chris1111 ve ASUS orijinal kurulum dosyalarına nazaran sinyal göstergesinin çalışmasıdır. Diğerlerinde durum çubuğunda sembolik bir (sabit) Wi-Fi ikonu bulunur, sinyal çekim gücünü ancak listeye girince görebilirsiniz fakat "Wi-Fi Fix" klasöründeki kurulum dosyasıyla birlikte gelen durum çubuğundaki Wireless çekim gücü ikonu hareketlidir, çekim gücünü net gösterir.
 
 ## İletişime geçin
-Website: https://veysel.me //
-Mail: [veyselfurkan@icloud.com](mailto:veyselfurkan@icloud.com)
+Website: https://sutsurup.com //
+Mail: [contact@sutsurup.com](mailto:contact@sutsurup.com)
 
 ## Diğer bağlantılar
 - [ASUS Resmi Websitesi // K555UB](https://www.asus.com/tr/Laptops/K555UB)
