@@ -1,21 +1,27 @@
-# ASUS K555UB XO092T | Intel® Core™ i5 Serisi
+# ASUS K555UB XO092T | Intel® Core™ i5 (6. Nesil)
 
-[![release](https://img.shields.io/badge/indir-son%20sürüm-blue.svg)](https://github.com/sutsurup/ASUS-K555UB-Hackintosh/releases) [![wiki](https://img.shields.io/badge/destek-iCloud-9cf.svg)](#i̇letişime-geçin)
+[![macOS](https://img.shields.io/badge/macOS-10.15.7-orange)](https://www.apple.com/am/macos/catalina/)
+[![OpenCore](https://img.shields.io/badge/Clover-5.1-9cf)](https://github.com/CloverHackyColor/CloverBootloader)
+[![release](https://img.shields.io/badge/indir-son%20sürüm-blue.svg)](https://github.com/sutsurup/ASUS-K555UB-Hackintosh/releases)
 
-Türkçe | [English](README_EN.md)
+<img align="right" src="Images/logo.png" alt="ASUS" width="200">
 
-**Bu yapıda paylaşacağım dosyaları kullanarak K555UB cihazınızda macOS çalıştırmanız mümkün - macOS 10.13 ve macOS 10.15 sürümleri arasında test edilmiştir**
+Türkçe | [English](https://github.com/sutsurup/ASUS-K555UB-Hackintosh/blob/master/README_EN.md)
 
-**Desteklenen modeller: XO066T/XO093T/XO096T/XO097T/XO198T/XO266T/XO099D/XO227D**
+**macOS Versiyonu: 10.15.7**
 
-![Alt text](Images/Hackintosh.png)
+**Clover Versiyonu: v5.1 r5128**
+
+**Desteklenen diğer K555UB modelleri:** XO066T/XO093T/XO096T/XO097T/XO198T/XO266T/XO099D/XO227D
 
 # Detaylar
 
     Tarih:        5 Haziran, 2020
     Durum:        Stabil
     Destek:       BIOS (Sürüm 304)
-    Yapı:         Clover kullanılarak, ASUS K555UB cihaza uyarlanmıştır
+    Yapı:         Clover Bootloader kullanılarak, sutsurup tarafından ASUS K555UB cihaza uyarlanmıştır
+
+![Alt text](Images/Hackintosh.png)
 
 ## Donanım
 
@@ -59,7 +65,7 @@ Türkçe | [English](README_EN.md)
     4. Realtek RTL8723BE Wireless (Wi-Fi kartı) [Apple desteklemiyor] -Yazının devamında çözümü var-
 
 ## Uyumluluk
-Paylaştığım EFI klasörü, **macOS Catalina 10.15.7** sürümünü desteklemektedir.
+Paylaştığım EFI klasörü, **macOS Catalina 10.15.7** sürümününe kadar desteklenmektedir.
 macOS Mojave 10.14.6 sürümünü kuracaksanız, USB bellekteki EFI diskinde sırasıyla EFI > Clover > Kexts > 10.15 içerisindeki tüm dosyaları, bir üst dizindeki 10.14 klasörüne taşıyın. macOS High Sierra 10.13.6 için 10.13 klasörüne taşıyın.
 
 ## Yedeklerinizi alın
