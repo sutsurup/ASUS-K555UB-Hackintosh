@@ -158,7 +158,7 @@ Mail: [contact@sutsurup.com](mailto:contact@sutsurup.com)
 - [Catalina 10.15.3](https://osxinfo.net/konu/asus-k555ub-xo092t-catalina-10-15-3.13141)
 - [Clover Bootloader](https://github.com/CloverHackyColor/CloverBootloader/releases)
 
-### Destek olun.
+## Destek olun.
 Projeyi faydalı bulduysanız, kaynak bulma konusunda bana yardımcı olmak için bağış yapabilirsiniz:
 ```
 ₿ 1Q8CEMHTuecxPUJpEdpRiG6Bg2GVtzw4bN
@@ -166,7 +166,7 @@ Papara ➜ 1801475764
 ``` 
 <a href='http://sutsurup.com/donate'><img alt='Bağış' src='https://github.com/sutsurup/MSI-Hackintosh-Build/blob/main/Images/donate.png?raw=true' height='360px' width='375px'/></a>
 ```
-QR kodu tarayarak alternatif seçeneklere ulaşabilirsiniz!
+QR kodu tarayarak alternatif seçeneklere ulaşabilirsiniz
 ``` 
 
 ### Teşekkürler:
