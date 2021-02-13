@@ -10,7 +10,7 @@ Türkçe | [English](https://github.com/sutsurup/ASUS-K555UB-Hackintosh/blob/mas
 
 **macOS Versiyonu: 10.15.7**
 
-**Clover Versiyonu: v5.1 r5128**
+**Clover Versiyonu: v5.1 r5129**
 
 **Desteklenen diğer K555UB modelleri:** XO066T/XO093T/XO096T/XO097T/XO198T/XO266T/XO099D/XO227D
 
@@ -157,6 +157,11 @@ Mail: [contact@sutsurup.com](mailto:contact@sutsurup.com)
 - [Mojave 10.14](https://osxinfo.net/konu/basarili-kurulum-asus-k555ub-xo092t-mojave-10-14.6632)
 - [Catalina 10.15.3](https://osxinfo.net/konu/asus-k555ub-xo092t-catalina-10-15-3.13141)
 - [Clover Bootloader](https://github.com/CloverHackyColor/CloverBootloader/releases)
+
+### Destek olmak için
+Bu projeyi faydalı bulduysanız, destek olmak için bağış yapabilirsiniz:
+**₿itcoin: 1Q8CEMHTuecxPUJpEdpRiG6Bg2GVtzw4bN**
+<a href='http://sutsurup.com/donate'><img alt='Donate' src='https://github.com/sutsurup/MSI-Hackintosh-Build/blob/main/Images/donate.png?raw=true' height='360px' width='375px'/></a>
 
 ### Teşekkürler:
 **LeeBinder** (README.md örnekleri), **RehabMan** (ACPI hotpatch), ve **Hackintosh** sistemlere destek veren birçok kişiye...
