@@ -161,6 +161,7 @@ Mail: [contact@sutsurup.com](mailto:contact@sutsurup.com)
 ### Destek olmak için
 Bu projeyi faydalı bulduysanız, destek olmak için bağış yapabilirsiniz:
 **₿itcoin: 1Q8CEMHTuecxPUJpEdpRiG6Bg2GVtzw4bN**
+
 <a href='http://sutsurup.com/donate'><img alt='Donate' src='https://github.com/sutsurup/MSI-Hackintosh-Build/blob/main/Images/donate.png?raw=true' height='360px' width='375px'/></a>
 
 ### Teşekkürler:
